@@ -5,6 +5,28 @@
 
 ---
 
+## ✅ Integración del sistema de estadísticas y analíticas de visitas (Vercel Analytics)
+
+| Campo | Detalle |
+|-------|---------|
+| **Fecha** | 2026-08-21 23:12:45 |
+| **Responsable** | David Mendez |
+
+### ¿Qué se realizó?
+
+Se configuró el sistema oficial de analíticas de Vercel para medir de forma segura y en tiempo real las visitas que recibe el sitio web de la iglesia.
+
+### ¿Qué significa para el proyecto?
+
+- Permite al equipo pastoral y de comunicaciones conocer el volumen de personas interesadas en los servicios, qué secciones visitan más y evaluar el alcance digital de la congregación.
+- Facilita la toma de decisiones informadas para futuras campañas o eventos comunitarios.
+
+### ¿Qué va a notar el usuario/cliente?
+
+- La experiencia de navegación se mantiene 100% rápida, fluida y privada, sin ventanas emergentes molestas ni ralentizaciones en dispositivos móviles.
+
+---
+
 ## ✅ Construcción inicial de la página web oficial y bases del proyecto
 
 | Campo | Detalle |

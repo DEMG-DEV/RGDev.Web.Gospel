@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '@vercel/analytics/astro';
 
 interface Props {
   title?: string;
@@ -146,5 +147,6 @@ const schemaOrg = [
   </head>
   <body class="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans selection:bg-gospel-gold-400 selection:text-gospel-navy-950">
     <slot />
+    <Analytics />
   </body>
 </html>

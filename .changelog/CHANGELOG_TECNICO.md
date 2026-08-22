@@ -5,6 +5,49 @@
 
 ---
 
+## feat: integración de Vercel Analytics en el layout base de Astro
+
+| Campo | Detalle |
+|-------|---------|
+| **Fecha** | 2026-08-21 23:12:45 |
+| **Autor** | David Mendez (david.mendez@courtbetsd.com) |
+| **Branch** | main |
+| **Tipo** | Feature / Integration |
+
+### Archivos Modificados
+
+| Archivo | Estado | Descripción del Cambio |
+|---------|--------|----------------------|
+| `package.json` | Modificado | Adición del paquete `@vercel/analytics` (^2.0.1) como dependencia de producción. |
+| `pnpm-lock.yaml` | Modificado | Actualización del árbol de dependencias y lockfile de pnpm. |
+| `src/layouts/Layout.astro` | Modificado | Importación e inserción del componente `<Analytics />` de `@vercel/analytics/astro` antes del cierre de `</body>`. |
+
+### Detalle Técnico
+- **Integración Nativa de Astro**: Se instaló `@vercel/analytics` y se consumió el componente exportado para Astro (`@vercel/analytics/astro`).
+- **Inyección en el Layout Base**: El componente se posicionó al final del contenedor `<body>` de `src/layouts/Layout.astro` para asegurar el tracking de páginas vistas y métricas de rendimiento web sin bloquear la renderización inicial.
+
+### Fragmentos de Código Relevantes
+
+```diff
+--- src/layouts/Layout.astro
++++ src/layouts/Layout.astro
+@@ -1,4 +1,5 @@
+ ---
+ import '../styles/global.css';
++import Analytics from '@vercel/analytics/astro';
+ 
+ interface Props {
+@@ -147,5 +148,6 @@
+   </head>
+   <body class="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans selection:bg-gospel-gold-400 selection:text-gospel-navy-950">
+     <slot />
++    <Analytics />
+   </body>
+ </html>
+```
+
+---
+
 ## feat: landing page estática en Astro, optimizaciones SEO y base de conocimiento en .ai
 
 | Campo | Detalle |
