@@ -1,0 +1,87 @@
+---
+// Footer Component
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gospel-navy-950 text-slate-400 pt-16 pb-12 border-t border-gospel-gold-500/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+      
+      <!-- Brand Summary -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full overflow-hidden bg-white p-0.5 border border-gospel-gold-400">
+            <img src="/assets/logo.jpg" alt="Logotipo de Gospel - Iglesia con Propósito" width="40" height="40" loading="lazy" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h4 class="text-lg font-black text-white tracking-wide">GOSPEL</h4>
+            <p class="text-xs uppercase tracking-widest text-gospel-gold-400">Iglesia con Propósito</p>
+          </div>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Una comunidad cristiana dedicada a servir con amor y pasión a Dios, la iglesia y el mundo. ¡Jesús transforma vidas!
+        </p>
+        <p class="text-xs text-gospel-gold-300 font-semibold">
+          Pastor: Jesús Hernández
+        </p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-y-3">
+        <h5 class="text-sm font-bold text-white uppercase tracking-wider">Enlaces Rápidos</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#inicio" class="hover:text-gospel-gold-400 transition-colors">Inicio</a></li>
+          <li><a href="#pilares" class="hover:text-gospel-gold-400 transition-colors">Nuestros Pilares</a></li>
+          <li><a href="#nosotros" class="hover:text-gospel-gold-400 transition-colors">Visión y Misión</a></li>
+          <li><a href="#horarios" class="hover:text-gospel-gold-400 transition-colors">Horarios de Reunión</a></li>
+          <li><a href="#ubicacion" class="hover:text-gospel-gold-400 transition-colors">Ubicación y Mapa</a></li>
+        </ul>
+      </div>
+
+      <!-- Schedules Summary -->
+      <div class="space-y-3">
+        <h5 class="text-sm font-bold text-white uppercase tracking-wider">Horarios Semanales</h5>
+        <div class="space-y-2.5 text-xs sm:text-sm">
+          <div class="bg-gospel-navy-900 p-3 rounded-xl border border-slate-800">
+            <span class="block text-gospel-gold-400 font-bold">Miércoles • 7:00 PM</span>
+            <span class="text-slate-300">Oración y Discipulado Bíblico</span>
+          </div>
+          <div class="bg-gospel-navy-900 p-3 rounded-xl border border-slate-800">
+            <span class="block text-gospel-gold-400 font-bold">Domingo • 10:30 AM</span>
+            <span class="text-slate-300">Servicio Familiar y Adoración</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location & Contact -->
+      <div class="space-y-3">
+        <h5 class="text-sm font-bold text-white uppercase tracking-wider">Visítanos</h5>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          📍 Cto. Hacienda del Real 1716<br />
+          Colonia La Noria
+        </p>
+        <div class="pt-2">
+          <a 
+            href="https://wa.me/?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20la%20Iglesia%20Gospel." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300"
+          >
+            <span>💬 Contáctanos por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Credits -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+      <p>© {currentYear} Gospel - Iglesia con Propósito. Todos los derechos reservados.</p>
+      <p class="text-slate-400">
+        "Un lugar para crecer en Dios con tu familia y amigos"
+      </p>
+    </div>
+
+  </div>
+</footer>

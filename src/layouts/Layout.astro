@@ -1,0 +1,150 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = "Gospel - Iglesia con Propósito | ¡Jesús Transforma Vidas!",
+  description = "Iglesia Cristiana en Colonia La Noria. Ven y recibe un mensaje de esperanza con tu familia y amigos. Horarios: Miércoles 7:00 PM y Domingo 10:30 AM.",
+  image = "/assets/banner-flyer.jpg",
+} = Astro.props;
+
+const siteUrl = "https://gospeliglesia.com";
+const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
+const fullImageUrl = new URL(image, siteUrl).toString();
+
+const schemaOrg = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "@id": `${siteUrl}/#church`,
+    "name": "Gospel - Iglesia con Propósito",
+    "alternateName": ["Iglesia Gospel", "Iglesia Cristiana Gospel"],
+    "description": description,
+    "url": siteUrl,
+    "logo": `${siteUrl}/assets/logo.jpg`,
+    "image": fullImageUrl,
+    "telephone": "",
+    "priceRange": "Gratis",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cto. Hacienda del Real 1716",
+      "addressLocality": "Colonia La Noria",
+      "addressRegion": "MX",
+      "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "20.6736",
+      "longitude": "-103.344"
+    },
+    "leader": {
+      "@type": "Person",
+      "name": "Jesús Hernández",
+      "jobTitle": "Pastor Principal"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday"],
+        "opens": "19:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "10:30",
+        "closes": "12:30"
+      }
+    ],
+    "sameAs": [
+      "https://wa.me/?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20la%20Iglesia%20Gospel."
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    "url": siteUrl,
+    "name": "Gospel - Iglesia con Propósito",
+    "description": description,
+    "inLanguage": "es-MX",
+    "publisher": {
+      "@id": `${siteUrl}/#church`
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": siteUrl
+      }
+    ]
+  }
+];
+---
+
+<!doctype html>
+<html lang="es-MX" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0D2040" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Iglesia Cristiana, Gospel, Iglesia con Propósito, La Noria, Pastor Jesús Hernández, Adoración, Enseñanza Bíblica, Comunidad Cristiana, Jesús Transforma Vidas, Hacienda del Real" />
+    <meta name="author" content="Gospel - Iglesia con Propósito" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Geo / Local SEO Tags -->
+    <meta name="geo.region" content="MX" />
+    <meta name="geo.placename" content="Colonia La Noria" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="Gospel - Iglesia con Propósito" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:image:alt" content="Gospel Iglesia con Propósito - ¡Jesús Transforma Vidas!" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
+    <meta name="twitter:image:alt" content="Gospel Iglesia con Propósito - ¡Jesús Transforma Vidas!" />
+
+    <!-- Performance & Font Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Rich Snippets JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+  </head>
+  <body class="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans selection:bg-gospel-gold-400 selection:text-gospel-navy-950">
+    <slot />
+  </body>
+</html>

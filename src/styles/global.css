@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-gospel-warm text-slate-800 antialiased font-sans;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-gospel-gold-500 text-gospel-navy-950;
+  }
+}
+
+@layer utilities {
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(212, 154, 55, 0.4);
+  }
+
+  .border-gold-glow {
+    box-shadow: 0 0 15px rgba(212, 154, 55, 0.15);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FCE49D 0%, #D49A37 60%, #915F16 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

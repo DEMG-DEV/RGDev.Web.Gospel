@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Pillars from '../components/Pillars.astro';
+import VisionMission from '../components/VisionMission.astro';
+import PastorMessage from '../components/PastorMessage.astro';
+import Schedule from '../components/Schedule.astro';
+import Location from '../components/Location.astro';
+import CTAInvite from '../components/CTAInvite.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Gospel - Iglesia con Propósito | ¡Jesús Transforma Vidas!" 
+  description="Iglesia Cristiana en Colonia La Noria. Ven y recibe un mensaje de esperanza con tu familia y amigos. Horarios: Miércoles 7:00 PM y Domingo 10:30 AM."
+>
+  <Navbar />
+  <main>
+    <Hero />
+    <Pillars />
+    <VisionMission />
+    <PastorMessage />
+    <Schedule />
+    <Location />
+    <CTAInvite />
+  </main>
+  <Footer />
+</Layout>

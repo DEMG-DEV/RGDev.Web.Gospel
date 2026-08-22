@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gospeliglesia.com/sitemap-index.xml
