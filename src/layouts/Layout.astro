@@ -10,7 +10,7 @@ interface Props {
 
 const {
   title = "Gospel - Iglesia con Propósito | ¡Jesús Transforma Vidas!",
-  description = "Iglesia Cristiana en Colonia La Noria. Ven y recibe un mensaje de esperanza con tu familia y amigos. Horarios: Miércoles 7:00 PM y Domingo 10:30 AM.",
+  description = "Iglesia Cristiana en Colonia La Noria. Ven y recibe un mensaje de esperanza con tu familia y amigos. Horarios: Domingo 7:00 PM, Lunes 8:00 PM, Miércoles 8:00 PM y Sábado 7:00 PM.",
   image = "/assets/banner-flyer.jpg",
 } = Astro.props;
 
@@ -43,23 +43,42 @@ const schemaOrg = [
       "latitude": "20.6736",
       "longitude": "-103.344"
     },
-    "leader": {
-      "@type": "Person",
-      "name": "Jesús Hernández",
-      "jobTitle": "Pastor Principal"
-    },
+    "leader": [
+      {
+        "@type": "Person",
+        "name": "Jesús Hernández",
+        "jobTitle": "Pastor"
+      },
+      {
+        "@type": "Person",
+        "name": "Laura Hernández",
+        "jobTitle": "Pastora"
+      }
+    ],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Wednesday"],
+        "dayOfWeek": ["Sunday"],
         "opens": "19:00",
-        "closes": "20:30"
+        "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Sunday"],
-        "opens": "10:30",
-        "closes": "12:30"
+        "dayOfWeek": ["Monday"],
+        "opens": "20:00",
+        "closes": "21:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday"],
+        "opens": "20:00",
+        "closes": "21:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "19:00",
+        "closes": "21:00"
       }
     ],
     "sameAs": [
@@ -108,7 +127,7 @@ const schemaOrg = [
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="Iglesia Cristiana, Gospel, Iglesia con Propósito, La Noria, Pastor Jesús Hernández, Adoración, Enseñanza Bíblica, Comunidad Cristiana, Jesús Transforma Vidas, Hacienda del Real" />
+    <meta name="keywords" content="Iglesia Cristiana, Gospel, Iglesia con Propósito, La Noria, Pastores Jesús y Laura Hernández, Pastor Jesús Hernández, Adoración, Oración, Seminario Bíblico, Comunidad Cristiana, Jesús Transforma Vidas, Hacienda del Real" />
     <meta name="author" content="Gospel - Iglesia con Propósito" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     

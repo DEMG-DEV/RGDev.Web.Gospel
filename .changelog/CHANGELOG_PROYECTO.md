@@ -5,6 +5,33 @@
 
 ---
 
+## ✅ Lanzamiento de Versión v1.1.0: Nuevos Horarios de Servicios y Liderazgo Pastoral
+
+| Campo | Detalle |
+|-------|---------|
+| **Fecha** | 2026-09-10 09:50:00 |
+| **Responsable** | David Mendez |
+
+### ¿Qué se realizó?
+Se actualizaron todos los horarios de las reuniones de la iglesia en la página web oficial para reflejar el nuevo cronograma semanal de cuatro actividades, así como la mención de los pastores Jesús y Laura Hernández:
+1. **Domingo 7:00 PM**: Servicio General (Reunión Principal de la familia).
+2. **Lunes 8:00 PM**: Reunión de Oración.
+3. **Miércoles 8:00 PM**: Servicio de Adoración.
+4. **Sábado 7:00 PM**: Seminario y Estudio Bíblico.
+
+### ¿Qué significa para el proyecto?
+- Los visitantes y miembros de la congregación ahora tienen información 100% exacta y actualizada de los días y horas de reunión.
+- Se fortalece la presencia de la iglesia en Google y mapas digitales gracias a la actualización de los horarios en las etiquetas técnicas de búsqueda (SEO).
+- Se reconoce oficialmente a ambos pastores en la bienvenida del sitio.
+
+### ¿Qué va a notar el usuario / visitante?
+- **En la cabecera principal (Hero)**: Verá de inmediato una barra rápida con los 4 horarios de la semana y el nombre de los Pastores Jesús y Laura Hernández.
+- **En la sección de Horarios**: Una cuadrícula moderna y atractiva con tarjetas individuales para cada día, destacando el Culto General del Domingo.
+- **En el pie de página (Footer)**: Un listado organizado con los horarios para fácil consulta desde cualquier parte del sitio.
+- **En el mensaje pastoral**: Un mensaje cálido que invita a participar en cualquiera de las 4 reuniones semanales.
+
+---
+
 ## ✅ Integración del sistema de estadísticas y analíticas de visitas (Vercel Analytics)
 
 | Campo | Detalle |

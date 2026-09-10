@@ -2,20 +2,36 @@
 // Service Schedules Component
 const services = [
   {
-    day: "Miércoles",
+    day: "Domingo",
     time: "7:00 PM",
-    title: "Servicio de Oración y Discipulado",
-    description: "Una pausa en la semana para recargar fuerzas, estudiar la Palabra en profundidad y buscar la presencia de Dios en oración comunitaria.",
-    tag: "Mitad de Semana",
+    title: "Servicio General",
+    description: "Nuestra reunión principal de adoración congregacional, celebración y mensaje bíblico para toda la familia y amigos.",
+    tag: "Servicio Principal",
+    highlight: true,
+  },
+  {
+    day: "Lunes",
+    time: "8:00 PM",
+    title: "Reunión de Oración",
+    description: "Tiempo consagrado a la intercesión comunitaria, clamor y búsqueda de la presencia y dirección de Dios.",
+    tag: "Oración",
     highlight: false,
   },
   {
-    day: "Domingo",
-    time: "10:30 AM",
-    title: "Servicio Familiar de Celebración",
-    description: "Nuestra reunión principal de adoración, alabanza congregacional y mensaje bíblico edificante para toda la familia y amigos.",
-    tag: "Reunión Principal",
-    highlight: true,
+    day: "Miércoles",
+    time: "8:00 PM",
+    title: "Servicio de Adoración",
+    description: "Una pausa en la semana para recargar fuerzas, adorar a Dios en unidad y recibir un mensaje edificante.",
+    tag: "Adoración",
+    highlight: false,
+  },
+  {
+    day: "Sábado",
+    time: "7:00 PM",
+    title: "Seminario y Estudio Bíblico",
+    description: "Formación doctrinal y crecimiento espiritual a través del estudio profundo y práctico de las Sagradas Escrituras.",
+    tag: "Seminario / Estudio",
+    highlight: false,
   }
 ];
 ---
@@ -37,9 +53,9 @@ const services = [
     </div>
 
     <!-- Service Cards -->
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
       {services.map((service) => (
-        <div class={`relative rounded-3xl p-8 sm:p-10 transition-all duration-300 flex flex-col justify-between ${
+        <div class={`relative rounded-3xl p-6 sm:p-7 transition-all duration-300 flex flex-col justify-between ${
           service.highlight 
             ? 'bg-gospel-navy-950 text-white border-2 border-gospel-gold-400 shadow-2xl shadow-gospel-navy-950/20' 
             : 'bg-slate-50 text-slate-800 border border-slate-200 shadow-lg hover:border-gospel-gold-400'
@@ -47,8 +63,8 @@ const services = [
           
           <!-- Top Badge -->
           <div>
-            <div class="flex items-center justify-between gap-4 mb-6">
-              <span class={`text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full ${
+            <div class="flex items-center justify-between gap-2 mb-6">
+              <span class={`text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full ${
                 service.highlight 
                   ? 'bg-gospel-gold-500 text-gospel-navy-950' 
                   : 'bg-slate-200 text-slate-700'
@@ -64,12 +80,12 @@ const services = [
 
             <!-- Day & Time -->
             <div class="mb-4">
-              <span class={`text-sm font-semibold uppercase tracking-wider ${
+              <span class={`text-xs font-semibold uppercase tracking-wider ${
                 service.highlight ? 'text-gospel-gold-300' : 'text-gospel-gold-600'
               }`}>
                 {service.day}
               </span>
-              <h3 class={`text-4xl sm:text-5xl font-black mt-1 ${
+              <h3 class={`text-3xl sm:text-4xl font-black mt-1 ${
                 service.highlight ? 'text-white' : 'text-gospel-navy-950'
               }`}>
                 {service.time}
@@ -77,13 +93,13 @@ const services = [
             </div>
 
             <!-- Title & Description -->
-            <h4 class={`text-xl font-bold mb-3 ${
+            <h4 class={`text-lg font-bold mb-2 ${
               service.highlight ? 'text-gospel-gold-200' : 'text-slate-900'
             }`}>
               {service.title}
             </h4>
 
-            <p class={`leading-relaxed text-sm sm:text-base ${
+            <p class={`leading-relaxed text-sm ${
               service.highlight ? 'text-slate-300' : 'text-slate-600'
             }`}>
               {service.description}

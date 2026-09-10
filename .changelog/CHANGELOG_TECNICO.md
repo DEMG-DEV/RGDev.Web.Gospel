@@ -5,6 +5,69 @@
 
 ---
 
+## feat(release): release v1.1.0 - actualización de horarios oficiales de servicios y liderazgo pastoral
+
+| Campo | Detalle |
+|-------|---------|
+| **Fecha** | 2026-09-10 09:50:00 |
+| **Autor** | David Mendez (david.mendez@courtbetsd.com) |
+| **Branch** | main |
+| **Tipo** | Feature / Release |
+
+### Archivos Modificados
+
+| Archivo | Estado | Descripción del Cambio |
+|---------|--------|----------------------|
+| `package.json` | Modificado | Incremento de versión semántica a `v1.1.0`. |
+| `src/components/Schedule.astro` | Modificado | Ampliación del array `services` a 4 reuniones semanales (Domingo, Lunes, Miércoles, Sábado) y rediseño de rejilla a 4 columnas responsivas (`lg:grid-cols-4`). |
+| `src/components/Hero.astro` | Modificado | Actualización de la tira de información rápida con los 4 horarios de servicios y actualización del card de liderazgo a Pastores Jesús y Laura Hernández. |
+| `src/components/Footer.astro` | Modificado | Inclusión del desglose de los 4 servicios semanales y actualización de nombres de los pastores. |
+| `src/components/PastorMessage.astro` | Modificado | Firma pastoral actualizada a Pastores Jesús y Laura Hernández y mensaje de invitación general a todas las reuniones. |
+| `src/layouts/Layout.astro` | Modificado | Actualización de metaetiquetas SEO (`description`, `keywords`) y datos estructurados Schema.org (`openingHoursSpecification` para los 4 días y entidad `leader`). |
+| `src/pages/index.astro` | Modificado | Actualización de meta-descripción con el resumen de los nuevos horarios. |
+| `README.md` | Modificado | Actualización de sección de ubicación, horarios de reunión y árbol de componentes. |
+| `.ai/context.md` | Modificado | Actualización de tabla de servicios semanales y liderazgo pastoral en la base de conocimiento IA. |
+| `.ai/landing-spec.md` | Modificado | Actualización de especificación funcional para las secciones `PastorMessage` y `Schedule`. |
+| `.ai/system-instructions.md` | Modificado | Actualización de directrices del sistema con los 4 horarios oficiales y pastores. |
+| `.gitignore` | Modificado | Exclusión del directorio de caché local `graphify-out/`. |
+
+### Detalle Técnico
+
+1. **Reestructuración del Módulo de Horarios (`Schedule.astro`)**:
+   - Se transformó la estructura de datos estática para albergar las cuatro reuniones:
+     - Domingo (7:00 PM): *Servicio General* (Reunión Principal con badge y estilo destacado).
+     - Lunes (8:00 PM): *Reunión de Oración*.
+     - Miércoles (8:00 PM): *Servicio de Adoración*.
+     - Sábado (7:00 PM): *Seminario y Estudio Bíblico*.
+   - Se ajustó el layout a `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto` para garantizar lectura fluida y balanceada en pantallas móviles, tablets y monitores de escritorio.
+2. **Optimización de Conversión en Hero y Footer**:
+   - En `Hero.astro`, la tira inferior ahora expone los 4 accesos rápidos de reunión con iconos semánticos y tipografía compacta (`text-sm font-bold`).
+   - En `Footer.astro`, se organizó una cuadrícula limpia de tarjetas oscuras para cada día de reunión.
+3. **SEO Local y Rich Snippets (Schema.org)**:
+   - En `Layout.astro`, se expandió el arreglo `openingHoursSpecification` para registrar formalmente los 4 días en JSON-LD (domingo a las 19:00, lunes a las 20:00, miércoles a las 20:00 y sábado a las 19:00).
+   - Se actualizó la propiedad `leader` a un arreglo con ambos pastores (Jesús Hernández y Laura Hernández).
+
+### Fragmentos de Código Relevantes
+
+```diff
+-  {
+-    day: "Miércoles",
+-    time: "7:00 PM",
+-    title: "Servicio de Oración y Discipulado",
+-  },
+-  {
+-    day: "Domingo",
+-    time: "10:30 AM",
+-    title: "Servicio Familiar de Celebración",
+-  }
++  { day: "Domingo", time: "7:00 PM", title: "Servicio General", highlight: true },
++  { day: "Lunes", time: "8:00 PM", title: "Reunión de Oración" },
++  { day: "Miércoles", time: "8:00 PM", title: "Servicio de Adoración" },
++  { day: "Sábado", time: "7:00 PM", title: "Seminario y Estudio Bíblico" }
+```
+
+---
+
 ## feat: integración de Vercel Analytics en el layout base de Astro
 
 | Campo | Detalle |

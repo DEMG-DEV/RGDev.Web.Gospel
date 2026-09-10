@@ -3,7 +3,7 @@
 ## 1. Identidad de la Organización
 - **Nombre Oficial**: Gospel - Iglesia con Propósito
 - **Denominación**: Iglesia Cristiana
-- **Liderazgo Pastoral**: Pastor Jesús Hernández
+- **Liderazgo Pastoral**: Pastores Jesús y Laura Hernández
 - **Lema Principal**: *"¡Jesús Transforma Vidas! Ven, escucha y recibe el mensaje de esperanza."*
 - **Eslogan Secundario**: *"Un lugar para crecer en Dios"* / *"Ven con tu familia y amigos, Dios tiene un propósito para tu vida."*
 
@@ -37,8 +37,10 @@
 
 | Día | Hora | Actividad |
 | :--- | :--- | :--- |
-| **Miércoles** | 7:00 PM | Servicio de Oración, Discipulado y Estudio Bíblico |
-| **Domingo** | 10:30 AM | Servicio Principal de Celebración, Adoración y Mensaje |
+| **Domingo** | 7:00 PM | Servicio General |
+| **Lunes** | 8:00 PM | Reunión de Oración |
+| **Miércoles** | 8:00 PM | Servicio de Adoración |
+| **Sábado** | 7:00 PM | Seminario y Estudio Bíblico |
 
 ---
 

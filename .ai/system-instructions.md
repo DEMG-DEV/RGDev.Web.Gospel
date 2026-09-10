@@ -14,8 +14,8 @@ Tu objetivo es mantener, evolucionar y optimizar la landing page estática de **
 
 2. **Políticas de Contenido**:
    - **NO publicar metas numéricas internas** (las metas institucionales del PDF son confidenciales/internas y no van en la web pública).
-   - Mantener siempre el nombre del Pastor **Jesús Hernández**.
-   - Respetar los horarios oficiales: **Miércoles 7:00 PM** y **Domingo 10:30 AM**.
+   - Mantener el nombre de los Pastores **Jesús y Laura Hernández**.
+   - Respetar los horarios oficiales: **Domingo 7:00 PM** (Servicio General), **Lunes 8:00 PM** (Oración), **Miércoles 8:00 PM** (Adoración) y **Sábado 7:00 PM** (Seminario Bíblico).
    - Respetar la dirección: **Cto. Hacienda del Real 1716, Colonia La Noria**.
    - Mantener el lema fundamental: *"¡Jesús Transforma Vidas! Ven, escucha y recibe el mensaje de esperanza."*
 

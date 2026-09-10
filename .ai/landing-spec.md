@@ -44,13 +44,15 @@ Tres tarjetas destacadas con iconos alusivos:
 - *Regla de Contenido*: **No incluir metas numéricas internas** en la página web pública.
 
 ### 5. Mensaje Pastoral (`PastorMessage`)
-- Mensaje cálido firmado por el **Pastor Jesús Hernández**.
+- Mensaje cálido firmado por los **Pastores Jesús y Laura Hernández**.
 - Enfoque pastoral: Abrir los brazos a toda persona que busca esperanza y dirección.
 
 ### 6. Horarios de Servicios (`Schedule`)
-- Tarjetas visuales de los dos días de reunión:
-  - **Miércoles — 7:00 PM**: Reunión de Oración y Estudio de la Palabra.
-  - **Domingo — 10:30 AM**: Servicio Familiar de Celebración y Adoración.
+- Tarjetas visuales de las cuatro reuniones semanales:
+  - **Domingo — 7:00 PM**: Servicio General de Celebración y Adoración.
+  - **Lunes — 8:00 PM**: Reunión de Oración e intercesión.
+  - **Miércoles — 8:00 PM**: Servicio de Adoración y comunión.
+  - **Sábado — 7:00 PM**: Seminario y Estudio Bíblico.
 - Incluye recordatorio: *"¡Te esperamos con tu familia y amigos!"*.
 
 ### 7. Ubicación y Cómo Llegar (`Location`)

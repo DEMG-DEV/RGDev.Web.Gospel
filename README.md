@@ -26,7 +26,7 @@ Landing page estática oficial para **Gospel - Iglesia con Propósito**, una com
 
 ## 🏛️ Identidad y Fundamentos
 
-* **Pastor Principal**: Jesús Hernández
+* **Pastores**: Jesús y Laura Hernández
 * **Lema Principal**: *"¡Jesús Transforma Vidas! Ven, escucha y recibe el mensaje de esperanza."*
 * **Propósito**: Servir con amor y pasión a Dios, la iglesia y el mundo.
 * **Visión**: Ser una iglesia de excelencia que pueda alcanzar a la mayoría del ser humano en el menor tiempo posible.
@@ -46,8 +46,10 @@ Landing page estática oficial para **Gospel - Iglesia con Propósito**, una com
 
 * **Dirección**: Cto. Hacienda del Real 1716, Colonia La Noria.
 * **Horarios de Servicios**:
-  * **Miércoles** • 7:00 PM — *Reunión de Oración y Estudio Bíblico*
-  * **Domingo** • 10:30 AM — *Servicio Familiar de Adoración y Palabra*
+  * **Domingo** • 7:00 PM — *Servicio General*
+  * **Lunes** • 8:00 PM — *Reunión de Oración*
+  * **Miércoles** • 8:00 PM — *Servicio de Adoración*
+  * **Sábado** • 7:00 PM — *Seminario y Estudio Bíblico*
 
 ---
 
@@ -93,7 +95,7 @@ Este repositorio incluye una suite de documentación estructurada para agentes y
 │   │   ├── Navbar.astro       # Barra de navegación responsiva
 │   │   ├── PastorMessage.astro# Mensaje pastoral de bienvenida
 │   │   ├── Pillars.astro      # Tarjetas de Enseñanza, Adoración y Comunidad
-│   │   ├── Schedule.astro     # Horarios de servicios (Miércoles y Domingo)
+│   │   ├── Schedule.astro     # Horarios de servicios (Domingo, Lunes, Miércoles, Sábado)
 │   │   └── VisionMission.astro# Visión, Misión y Propósito
 │   ├── layouts/
 │   │   └── Layout.astro       # Layout base con SEO y metadatos
@@ -169,4 +171,4 @@ npm run preview
 
 ---
 
-*Gospel - Iglesia con Propósito • Pastor Jesús Hernández • Colonia La Noria*
+*Gospel - Iglesia con Propósito • Pastores Jesús y Laura Hernández • Colonia La Noria*
